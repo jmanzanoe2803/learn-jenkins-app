@@ -21,10 +21,12 @@ pipeline {
             }
         }
         stage('test'){
-            sh '''
-                ls -la
-                grep "index.html" build
-            '''
+            steps{
+                sh '''
+                    ls -la
+                    grep "index.html" build
+                '''
+            }
         }
     }
 }
