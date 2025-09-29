@@ -25,6 +25,7 @@ pipeline {
                 sh '''
                     ls -la
                     echo "Test stage"
+                    test -f build/index.html
                 '''
             }
         }
