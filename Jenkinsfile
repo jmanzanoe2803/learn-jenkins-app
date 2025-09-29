@@ -25,7 +25,8 @@ pipeline {
                 sh '''
                     ls -la
                     echo "Test stage"
-                    test -f build/index.html && echo "index.html encontrado ✅" 
+                    test -f build/index.html && echo "index.html encontrado ✅"
+                    npm test 
                 '''
             }
         }
