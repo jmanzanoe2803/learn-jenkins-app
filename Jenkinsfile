@@ -61,7 +61,6 @@ pipeline {
 
     post {
         always {
-            junit 'jest-results/junit.xml'
             junit 'jest-results-e2e/junit.xml'
         }
     }
